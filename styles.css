@@ -24,6 +24,8 @@ header {
 
 main {
     margin-top: 6.4rem;
+    display: flex;
+    flex-direction: column;
 }
 
 .hero-section {
@@ -45,4 +47,100 @@ h1 {
     line-height: 2.6rem;
     margin-top: 2rem;
 }
+
+/* offer section */
+.offer-section {
+    width: 100%;
+    margin-top: 16.4rem;
+    position: relative;
+    max-width: 50rem;
+    align-self: center;
+}
+
+.phone-wrapper {
+
+    height: 60rem;
+    background-color: #191826;
+    border-radius: 12px;
+    background-image: url("assets/bg-pattern-2.svg");
+    background-repeat: no-repeat;
+    background-position: left 50% top 0;
+    position: relative;
+}
+
+.phone-img {
+    width: 20.9rem;
+    height: 43rem;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: -9.8rem;
+}
+
+/*pricing container*/
+.pricing-container {
+    border-radius: 12px;
+    background: #fa7453;
+    position: absolute;
+    top: 38rem;
+    padding: 4.8rem 3.6rem;
+    color: #fcfaf9;
+}
+
+.pricing-container h2 {
+    font-size: 3.2rem;
+    font-weight: 700;
+    line-height: 4rem;
+}
+
+.offer-text {
+    font-size: 1.8rem;
+    font-weight: 400;
+    line-height: 2.8rem;
+    margin-top: 1.2rem;
+}
+
+.price {
+    font-size: 6.5rem;
+    font-weight: 700;
+    line-height: 5.2rem;
+    margin-top: 3.6rem;
+}
+
+.price span {
+    font-size: 2rem;
+    vertical-align: bottom;
+}
+.download-container {
+    display: flex;
+    flex-direction: column;
+    margin-top: 3.2rem;
+    gap: 1.6rem;
+}
+
+.download-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.8rem;
+    border-radius: 12px;
+    border: none;
+    padding: 1.5rem 0;
+    font-size: 1.8rem;
+    font-weight: 700;
+    line-height: 3.2rem;
+    letter-spacing: -0.18px;
+}
+
+ .ios {
+     background-color: #191826 ;
+     color: #fcfaf9;
+ }
+
+ .android {
+     background-color: #fcfaf9;
+     color: #191826;
+ }
+
+
 
