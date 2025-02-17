@@ -1,0 +1,48 @@
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,100..700;1,100..700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    min-height: 100vh;
+    background-image: url("assets/bg-main-tablet.png");
+    background-repeat: no-repeat;
+    background-position: top -30rem right -25rem;
+    font-family: "IBM Plex Sans", sans-serif;
+}
+
+header {
+    padding: 4rem 2.4rem;
+}
+
+main {
+    margin-top: 6.4rem;
+}
+
+.hero-section {
+    padding: 2.4rem;
+    color: #191826;
+    max-width: 50rem;
+}
+
+h1 {
+    font-size: 4rem;
+    font-weight: 700;
+    line-height: 4.8rem;
+    letter-spacing: -0.455px;
+}
+
+.description {
+    font-size: 1.6rem;
+    font-weight: 400;
+    line-height: 2.6rem;
+    margin-top: 2rem;
+}
+
