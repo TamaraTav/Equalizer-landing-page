@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,100..700;1,100..700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;700&display=swap");
 
 * {
     margin: 0;
@@ -11,19 +11,21 @@ html {
 }
 
 body {
+    font-family: "IBM Plex Sans", sans-serif;
     min-height: 100vh;
-    background-image: url("assets/bg-main-mobile.png");
+    background-image: url(./assets/bg-main-mobile.png);
     background-repeat: no-repeat;
     background-position: top -30rem right -25rem;
-    font-family: "IBM Plex Sans", sans-serif;
 }
 
-/*header*/
+/* Header */
+
 header {
     padding: 4rem 2.4rem 0;
 }
 
-/*main*/
+/* Main */
+
 main {
     margin-top: 6.4rem;
     display: flex;
@@ -50,22 +52,23 @@ h1 {
     margin-top: 2rem;
 }
 
-/* offer section */
+/* Offer Section */
+
 .offer-section {
     width: 100%;
     margin-top: 16.6rem;
-    position: relative;
     max-width: 60rem;
     align-self: center;
+    position: relative;
 }
 
 .phone-wrapper {
     height: 60rem;
     background-color: #191826;
-    border-radius: 12px;
-    background-image: url("assets/bg-pattern-2.svg");
-    background-repeat: no-repeat;
+    background-image: url(./assets/bg-pattern-2.svg);
     background-position: left 50% top 0;
+    background-repeat: no-repeat;
+    border-radius: 12px;
     position: relative;
 }
 
@@ -78,7 +81,8 @@ h1 {
     top: -9.8rem;
 }
 
-/*pricing container*/
+/* Pricing Container */
+
 .pricing-container {
     border-radius: 12px;
     background: #fa7453;
@@ -112,11 +116,12 @@ h1 {
     font-size: 2rem;
     vertical-align: bottom;
 }
+
 .download-container {
     display: flex;
     flex-direction: column;
-    margin-top: 3.2rem;
     gap: 1.6rem;
+    margin-top: 3.2rem;
 }
 
 .download-button {
@@ -135,38 +140,39 @@ h1 {
     transition: 0.3s;
 }
 
- .ios {
-     background-color: #191826 ;
-     color: #fcfaf9;
- }
+.ios {
+    background-color: #191826;
+    color: #fcfaf9;
+}
 
- .android {
-     background-color: #fcfaf9;
-     color: #191826;
- }
+.android {
+    background-color: #fcfaf9;
+    color: #191826;
+}
 
- /*footer*/
- footer {
-     margin-top: 39rem;
-     padding: 0 2.4rem 8rem;
-     display: flex;
-     flex-direction: column;
-     align-items: self-start;
-     gap: 3.2rem;
- }
+/* Footer */
 
- .right-container {
-     display: flex;
-     flex-direction: column;
-     gap: 6.4rem;
- }
+footer {
+    margin-top: 39em;
+    padding: 0 2.4rem 8rem;
+    display: flex;
+    flex-direction: column;
+    align-items: self-start;
+    gap: 3.2rem;
+}
 
- .footer-desc {
-     color: #191826;
-     font-size: 1.6rem;
-     font-weight: 400;
-     line-height: 2.6rem;
- }
+.rights-container {
+    display: flex;
+    flex-direction: column;
+    gap: 6.4rem;
+}
+
+.footer-desc {
+    color: #191826;
+    font-size: 1.6rem;
+    font-weight: 400;
+    line-height: 2.6rem;
+}
 
 .footer-desc span {
     font-weight: 700;
@@ -177,40 +183,50 @@ h1 {
     gap: 1.6rem;
 }
 
-/*Media Queries*/
-@media only screen and (min-width: 48rem){
+/* Media Queries */
+
+@media only screen and (min-width: 48rem) {
     body {
-        background-image: url("assets/bg-main-tablet.png"), url("assets/bg-pattern-1.svg");
+        background-image: url(./assets/bg-main-tablet.png),
+        url(./assets/bg-pattern-1.svg);
         background-position: top -30rem right -15rem, top -3rem right -3rem;
     }
+
     header {
         padding: 6.2rem 3.9rem 0;
     }
+
     main {
         margin-top: 9.5rem;
     }
+
     .hero-section {
         padding: 0 3.9rem;
         max-width: 70rem;
     }
+
     h1 {
         font-size: 6.4rem;
         line-height: 6.4rem;
         letter-spacing: -0.727px;
     }
+
     .description {
         font-size: 1.8rem;
         line-height: 2.8rem;
         margin-top: 2.8rem;
     }
+
     .offer-section {
         margin-top: 25rem;
         width: 69.6rem;
         max-width: unset;
     }
+
     .phone-wrapper {
         background-position: left 50% top 4rem;
     }
+
     .phone-img {
         width: 27rem;
         height: 55.6rem;
@@ -218,12 +234,14 @@ h1 {
         transform: unset;
         top: -13.8rem;
     }
+
     .pricing-container {
         width: 40rem;
         padding: 4.8rem;
         top: 15rem;
         left: 25rem;
     }
+
     footer {
         margin-top: 18.2rem;
         gap: 3.2rem;
@@ -235,7 +253,30 @@ h1 {
         justify-content: space-between;
         width: 100%;
     }
-
 }
 
+@media only screen and (min-width: 90rem) {
+    footer {
+        flex-direction: row;
+        gap: 13.7rem;
+    }
 
+    .ios:hover {
+        background-color: #66e2dc;
+        color: #fcfaf9;
+    }
+
+    .android:hover {
+        background-color: #ffb964;
+        color: #191826;
+    }
+
+    .social-icon path {
+        cursor: pointer;
+        transition: 0.3s;
+    }
+
+    .social-icon:hover path {
+        fill: orange;
+    }
+}
